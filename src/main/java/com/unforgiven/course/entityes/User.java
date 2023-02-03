@@ -24,6 +24,7 @@ public class User implements Serializable{
 	private String email;
 	private String phone;
 	private String password;
+	private String net;
 	
 	@OneToMany(mappedBy = "client")
 	private List<Order> order = new ArrayList<>();  
